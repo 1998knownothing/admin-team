@@ -18,6 +18,8 @@ public interface RoleMapper {
 
     List<Role> selectByExample(RoleExample example);
 
+    List<Role> selectAllRole();
+
     Role selectByPrimaryKey(Integer roleId);
 
     int updateByExampleSelective(@Param("record") Role record, @Param("example") RoleExample example);
